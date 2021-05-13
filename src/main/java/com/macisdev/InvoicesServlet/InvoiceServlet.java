@@ -38,7 +38,7 @@ public class InvoiceServlet extends HttpServlet {
 		response.setContentType("application/pdf");
 
 		//Configure the download
-		response.setHeader("Content-disposition", String.format("inline; filename=%s.pdf", id));
+		response.setHeader("Content-Disposition", String.format("inline; filename=%s.pdf", id));
 
 		//File to download
 		File invoice = new File(String.format("%s/%s.pdf", "invoices", id));
