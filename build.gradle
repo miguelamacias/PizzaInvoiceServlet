@@ -1,0 +1,46 @@
+plugins {
+    id 'java'
+    id 'war'
+}
+
+group 'com.macisdev'
+version '0.1'
+
+repositories {
+    mavenCentral()
+    flatDir {
+        dirs 'libs'
+    }
+    maven {
+        url "https://oss.sonatype.org/content/repositories/ksoap2-android-releases/"
+    }
+}
+
+ext {
+    junitVersion = '5.7.0'
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+war {
+    archivesBaseName = 'InvoicesServlet'
+}
+
+dependencies {
+
+    compileOnly('javax.servlet:javax.servlet-api:4.0.1')
+    implementation('com.itextpdf:itext7-core:7.1.14')
+    implementation('org.apache.commons:commons-lang3:3.0')
+    implementation ('com.google.code.ksoap2-android:ksoap2-android:3.6.4')
+    testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
+}
+
+test {
+    useJUnitPlatform()
+}
