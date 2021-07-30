@@ -1,4 +1,7 @@
-<?xml version='1.0' encoding='UTF-8'?><wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://pizzawebservice.macisdev.com/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" name="PizzaService" targetNamespace="http://pizzawebservice.macisdev.com/">
+<?xml version='1.0' encoding='UTF-8'?>
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://pizzawebservice.macisdev.com/"
+                  xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+                  name="PizzaService" targetNamespace="http://pizzawebservice.macisdev.com/">
   <wsdl:types>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://pizzawebservice.macisdev.com/" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://pizzawebservice.macisdev.com/" version="1.0">
   <xs:element name="getOrders" type="tns:getOrders"/>

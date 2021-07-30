@@ -27,12 +27,13 @@ public class InvoiceServlet extends HttpServlet {
 		PizzaShopWebService psws = new PizzaShopWebService();
 		PizzaShopService pizzaShopService = psws.getPizzaShopServicePort();
 
-		String order = pizzaShopService.getStoredOrder(id);
-		System.out.println(order);
+		String orderString = pizzaShopService.getStoredOrder(id);
+		System.out.println(orderString);
 
 		//Generates the invoice
-		InvoiceGenerator generator = new InvoiceGenerator(ParserXML.parseXmlToOrder(order, ParserXML.RESTAURANT));
-		generator.generateInvoice("12/04/2021", "invoices");
+		Order order = ParserXML.parseXmlToOrder(orderString, ParserXML.RESTAURANT);
+		InvoiceGenerator generator = new InvoiceGenerator(order);
+		generator.generateInvoice("invoices");
 
 		//Set the type of file to download
 		response.setContentType("application/pdf");

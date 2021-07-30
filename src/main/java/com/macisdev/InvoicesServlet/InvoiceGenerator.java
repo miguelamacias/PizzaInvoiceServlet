@@ -26,7 +26,7 @@ public class InvoiceGenerator {
 		this.order = order;
 	}
 
-	public void generateInvoice(String date, String destDirectory) throws FileNotFoundException {
+	public void generateInvoice(String destDirectory) throws FileNotFoundException {
 		//Creates the document objects
 		File destFile = new File(destDirectory, order.getOrderId() + ".pdf");
 		PdfWriter writer = new PdfWriter(destFile);
@@ -53,7 +53,7 @@ public class InvoiceGenerator {
 		orderInfo.add("\n");
 
 		orderInfo.add("Fecha: ");
-		orderInfo.add(date);
+		orderInfo.add(order.getOrderDateTime());
 		orderInfo.add("\n");
 
 		orderInfo.add("Cliente: ");

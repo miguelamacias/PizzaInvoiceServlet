@@ -2,10 +2,10 @@ com/macisdev/InvoicesServlet/webservicereference/GetOrders.java
  com.macisdev.InvoicesServlet.webservicereference.GetOrders
 com/macisdev/InvoicesServlet/webservicereference/GetStoredOrder.java
  com.macisdev.InvoicesServlet.webservicereference.GetStoredOrder
-com/macisdev/InvoicesServlet/webservicereference/GetAllStoredOrdersResponse.java
- com.macisdev.InvoicesServlet.webservicereference.GetAllStoredOrdersResponse
-com/macisdev/InvoicesServlet/webservicereference/GetUnfinishedOrdersResponse.java
- com.macisdev.InvoicesServlet.webservicereference.GetUnfinishedOrdersResponse
+com/macisdev/InvoicesServlet/webservicereference/GetStoredOrderResponse.java
+ com.macisdev.InvoicesServlet.webservicereference.GetStoredOrderResponse
+com/macisdev/InvoicesServlet/webservicereference/FinalizeOrder.java
+ com.macisdev.InvoicesServlet.webservicereference.FinalizeOrder
 com/macisdev/InvoicesServlet/webservicereference/GetStoredOrdersByPhoneNumber.java
  com.macisdev.InvoicesServlet.webservicereference.GetStoredOrdersByPhoneNumber
 com/macisdev/InvoicesServlet/webservicereference/package-info.java
@@ -14,35 +14,35 @@ com/macisdev/InvoicesServlet/webservicereference/SendOrder.java
  com.macisdev.InvoicesServlet.webservicereference.SendOrder
 com/macisdev/InvoicesServlet/webservicereference/FinalizeOrderResponse.java
  com.macisdev.InvoicesServlet.webservicereference.FinalizeOrderResponse
-com/macisdev/InvoicesServlet/ParserXML.java
- com.macisdev.InvoicesServlet.ParserXML
+com/macisdev/InvoicesServlet/OrderElement.java
+ com.macisdev.InvoicesServlet.OrderElement
 com/macisdev/InvoicesServlet/webservicereference/GetAllStoredOrders.java
  com.macisdev.InvoicesServlet.webservicereference.GetAllStoredOrders
 com/macisdev/InvoicesServlet/webservicereference/SendOrderResponse.java
  com.macisdev.InvoicesServlet.webservicereference.SendOrderResponse
+com/macisdev/InvoicesServlet/webservicereference/GetUnfinishedOrders.java
+ com.macisdev.InvoicesServlet.webservicereference.GetUnfinishedOrders
 com/macisdev/InvoicesServlet/webservicereference/GetStoredOrdersByPhoneNumberResponse.java
  com.macisdev.InvoicesServlet.webservicereference.GetStoredOrdersByPhoneNumberResponse
+com/macisdev/InvoicesServlet/webservicereference/GetAllStoredOrdersResponse.java
+ com.macisdev.InvoicesServlet.webservicereference.GetAllStoredOrdersResponse
+com/macisdev/InvoicesServlet/webservicereference/GetUnfinishedOrdersResponse.java
+ com.macisdev.InvoicesServlet.webservicereference.GetUnfinishedOrdersResponse
 com/macisdev/InvoicesServlet/webservicereference/ObjectFactory.java
  com.macisdev.InvoicesServlet.webservicereference.ObjectFactory
 com/macisdev/InvoicesServlet/Order.java
  com.macisdev.InvoicesServlet.Order
-com/macisdev/InvoicesServlet/webservicereference/GetStoredOrderResponse.java
- com.macisdev.InvoicesServlet.webservicereference.GetStoredOrderResponse
+com/macisdev/InvoicesServlet/InvoiceServlet.java
+ com.macisdev.InvoicesServlet.InvoiceServlet
 com/macisdev/InvoicesServlet/webservicereference/GetOrdersResponse.java
  com.macisdev.InvoicesServlet.webservicereference.GetOrdersResponse
 com/macisdev/InvoicesServlet/webservicereference/PizzaShopWebService.java
  com.macisdev.InvoicesServlet.webservicereference.PizzaShopWebService
-com/macisdev/InvoicesServlet/webservicereference/GetUnfinishedOrders.java
- com.macisdev.InvoicesServlet.webservicereference.GetUnfinishedOrders
 com/macisdev/InvoicesServlet/webservicereference/PizzaShopService.java
  com.macisdev.InvoicesServlet.webservicereference.PizzaShopService
-com/macisdev/InvoicesServlet/webservicereference/FinalizeOrder.java
- com.macisdev.InvoicesServlet.webservicereference.FinalizeOrder
-com/macisdev/InvoicesServlet/OrderElement.java
- com.macisdev.InvoicesServlet.OrderElement
-com/macisdev/InvoicesServlet/InvoiceGenerator.java
- com.macisdev.InvoicesServlet.InvoiceGenerator
 com/macisdev/InvoicesServlet/TestMain.java
  com.macisdev.InvoicesServlet.TestMain
-com/macisdev/InvoicesServlet/InvoiceServlet.java
- com.macisdev.InvoicesServlet.InvoiceServlet
+com/macisdev/InvoicesServlet/InvoiceGenerator.java
+ com.macisdev.InvoicesServlet.InvoiceGenerator
+com/macisdev/InvoicesServlet/ParserXML.java
+ com.macisdev.InvoicesServlet.ParserXML

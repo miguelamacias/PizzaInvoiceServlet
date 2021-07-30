@@ -10,10 +10,10 @@ public class TestMain {
 						"SIN: Alcachofas</extras><price>7.8</price></pizza><pizza><code>8</code><name>Di Marco</name><size>Mediana</size><extras/><price>6.8</price></pizza><pizza><code>13</code><name>Vegetal</name><size>Mediana</size><extras/><price>6.5</price></pizza><pizza><code>14</code><name>Andaluza</name><size>Mediana</size><extras/><price>6.5</price></pizza></order>",
 				ParserXML.WEBSERVICE);
 
-		order.setOrderId("local_invoice");
+		//order.setOrderId("local_invoice");
 
 		InvoiceGenerator generator = new InvoiceGenerator(order);
-		generator.generateInvoice("31/03/2021", ".");
+		generator.generateInvoice(".");
 
 	}
 }
